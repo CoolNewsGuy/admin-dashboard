@@ -19,6 +19,7 @@ body {
 .sidebar {
     background: rgb(119, 175, 231);
     grid-row: 1 / span 2;
+    color: white;
 }
 
 .main {
