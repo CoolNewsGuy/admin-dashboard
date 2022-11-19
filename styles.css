@@ -1,3 +1,26 @@
 * {
     box-sizing: border-box;
 }
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid: 1fr 4fr / 1fr 4.5fr;
+}
+
+.header {
+    background: #dae;
+}
+
+.sidebar {
+    background: rgb(119, 175, 231);
+    grid-row: 1 / span 2;
+}
+
+.main {
+    background: #ade;
+}
