@@ -15,6 +15,11 @@ body {
     grid: 1fr 4fr / 1fr 4.5fr;
 }
 
+svg {
+    width: 24px;
+    height: 24px;
+}
+
 .header {
     background: #dae;
 }
