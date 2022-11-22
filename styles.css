@@ -21,11 +21,11 @@ svg {
 }
 
 .header {
-    background: #dae;
+    background: #fff;
 }
 
 .sidebar {
-    background: rgb(119, 175, 231);
+    background: rgb(89, 163, 236);
     grid-row: 1 / span 2;
     color: white;
 }
