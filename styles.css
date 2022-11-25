@@ -247,12 +247,7 @@ button:hover {
 /* TODO main */
 .main {
     background: rgb(230, 236, 249);
-    display: flex;
-}
-
-.left-content {
-    width: 76%;
-    overflow-y: scroll;
+    width: 100%;
     display: grid;
     grid-template: 10px repeat(auto-fit, 220px) / repeat(
             auto-fit,
@@ -263,11 +258,7 @@ button:hover {
     gap: 40px;
 }
 
-.left-content::-webkit-scrollbar {
-    visibility: hidden;
-}
-
-.left-content h3 {
+.main h3 {
     grid-column: 1 / -1;
 }
 
@@ -304,9 +295,4 @@ button:hover {
 .icons * {
     margin-right: 25px;
     cursor: pointer;
-}
-
-.right-content {
-    background: #fae;
-    width: 24%;
 }
