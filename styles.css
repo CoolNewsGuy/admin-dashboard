@@ -249,31 +249,31 @@ button:hover {
     background: rgb(230, 236, 249);
     width: 100%;
     display: grid;
-    grid-template: 10px repeat(auto-fit, 220px) / repeat(
-            auto-fit,
-            minmax(200px, 500px)
-        );
     justify-content: center;
-    align-content: center;
     gap: 40px;
+    grid-template: 10px repeat(3, 220px) / repeat(2, 28vw) 20vw;
 }
 
-.main h3 {
-    grid-column: 1 / -1;
+.main h3:first-child {
+    grid-column: span 2;
 }
 
-.project {
-    margin: auto;
+.project,
+.announcement-container,
+.quote-container {
     padding: 1vw;
-    border-left: 7px solid rgb(255, 174, 0);
-    border-radius: 10px;
-    background: #fff;
-    height: 100%;
     box-shadow: 0 0 5px #0002;
+    background: #fff;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.project {
+    border-left: 7px solid rgb(255, 174, 0);
+    height: 100%;
     position: relative;
 }
 
@@ -295,4 +295,25 @@ button:hover {
 .icons * {
     margin-right: 25px;
     cursor: pointer;
+}
+
+.announcement-container {
+    grid-row: span 2;
+}
+
+.quote-container {
+    padding: 0;
+    display: grid;
+    place-content: center;
+}
+
+.quote q {
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.quote-owner {
+    font-size: 1.4rem;
+    text-align: right;
 }
