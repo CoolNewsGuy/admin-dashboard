@@ -12,7 +12,7 @@ html {
 
 body {
     display: grid;
-    grid: 1fr 4fr / 300px 5fr;
+    grid: 0.8fr 4fr / 300px 5fr;
 }
 
 img:not([src="icons/avatar.jpg"]) {
@@ -252,18 +252,28 @@ button:hover {
 
 .left-content {
     width: 76%;
+    overflow-y: scroll;
     display: grid;
-    /* grid-template: repeat(3, 300px) / repeat(2, 500px); */
+    grid-template: 10px repeat(auto-fit, 220px) / repeat(
+            auto-fit,
+            minmax(200px, 500px)
+        );
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.left-content::-webkit-scrollbar {
+    visibility: hidden;
 }
 
 .project {
     margin: auto;
-    padding: 20px;
+    padding: 1vw;
     border-left: 7px solid rgb(255, 174, 0);
     border-radius: 10px;
     background: #fff;
-    height: 250px;
-    width: 450px;
+    height: 100%;
     box-shadow: 0 0 5px #0002;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
